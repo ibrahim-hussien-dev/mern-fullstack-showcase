@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahmoud — Backend Developer (Node.js)</title>
+<meta name="description" content="Mahmoud is a Computer Engineering graduate and backend developer in Alexandria, Egypt, building Node.js, Express and MongoDB systems.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="#hero" aria-label="Mahmoud, home">
+    <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="7" fill="currentColor"/><path d="M7 22 L14 12 L20 18 L26 9" fill="none" stroke="var(--signal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Mahmoud</span>
+  </a>
+  <div class="header-tools">
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.5 0-.9-.1-1.3A6 6 0 0 1 12 3z"/></svg>
+    </button>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="scrim" id="scrim" hidden></div>
+
+<main id="main">
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="hero-kicker">Backend developer, Alexandria</p>
+      <h1 id="hero-title">I build Node.js backends that get people where they’re going.</h1>
+      <p class="lede">Computer Engineering graduate focused on Express, MongoDB and clean APIs. My flagship project routes riders across Alexandria’s microbus network in Arabic.</p>
+      <p class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </p>
+    </div>
+    <figure class="route" aria-label="Diagram of a three-transfer route found by breadth-first search">
+      <svg viewBox="0 0 360 280" role="img" aria-labelledby="route-t">
+        <title id="route-t">A route with four stops and two transfers</title>
+        <path class="route-line" d="M30 230 C 110 230, 90 150, 170 150 S 250 60, 330 50" pathLength="1"/>
+        <g class="stops">
+          <circle cx="30" cy="230" r="9"/><circle cx="170" cy="150" r="9"/><circle cx="262" cy="96" r="9"/><circle class="dest" cx="330" cy="50" r="11"/>
+        </g>
+        <g class="stop-labels">
+          <text x="30" y="258" text-anchor="start">Start</text>
+          <text x="170" y="180" text-anchor="middle">Transfer 1</text>
+          <text x="262" y="128" text-anchor="middle">Transfer 2</text>
+          <text x="330" y="26" text-anchor="end">Destination</text>
+        </g>
+      </svg>
+      <figcaption>Fewest-transfer pathfinding (BFS), as used in Am Ghareeb.</figcaption>
+    </figure>
+  </section>
+
+  <section id="about" class="section" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <div class="prose">
+      <p>I graduated in Computer Engineering from AASTMT Alexandria in 2024, then completed a 600+ hour full-stack and generative AI program at ITI covering the MERN stack.</p>
+      <p>Since then I’ve worked as a backend intern at i-fikra, Devora and YallaExpand, and as a frontend intern at Huma Volve. I care about APIs that are validated, tested and documented.</p>
+      <p>Before industry, I competed in programming contests (top 25 nationally at ECPC) and led the LITup student activity at AASTMT.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <h2 id="skills-title">Skills</h2>
+    <div class="skill-groups">
+      <div><h3>Backend</h3><ul class="chips"><li>Node.js</li><li>Express</li><li>REST APIs</li><li>JWT auth</li><li>Redis</li><li>SSE streaming</li></ul></div>
+      <div><h3>Data</h3><ul class="chips"><li>MongoDB</li><li>Mongoose</li><li>SQL vs NoSQL design</li></ul></div>
+      <div><h3>Frontend</h3><ul class="chips"><li>React</li><li>TypeScript</li><li>SCSS</li><li>HTML &amp; CSS</li></ul></div>
+      <div><h3>AI &amp; tooling</h3><ul class="chips"><li>RAG pipelines</li><li>GPT-4o-mini</li><li>Git &amp; GitHub</li><li>Automated testing</li></ul></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+    <div class="cards">
+      <article class="card card-lead">
+        <h3>Am Ghareeb</h3>
+        <p>An Arabic AI transit advisor for Alexandria’s informal microbus network. It finds routes with up to several transfers and answers rider questions through a RAG pipeline.</p>
+        <ul class="tags"><li>MERN</li><li>22 endpoints</li><li>96 tests</li><li>Redis</li><li>Google OAuth</li></ul>
+        <p class="card-link"><a href="https://github.com/mahmoud112001">View on GitHub</a></p>
+      </article>
+      <article class="card">
+        <h3>LogFlow</h3>
+        <p>A developer log platform organised as an npm-workspaces monorepo.</p>
+        <ul class="tags"><li>Monorepo</li><li>Node.js</li></ul>
+        <p class="card-link"><a href="https://github.com/mahmoud112001">View on GitHub</a></p>
+      </article>
+      <article class="card">
+        <h3>JS Game Station</h3>
+        <p>A game hub with no framework, written in TypeScript and SCSS. Its SOLID design-pattern module is used as a teaching reference at ITI.</p>
+        <ul class="tags"><li>TypeScript</li><li>SCSS</li></ul>
+        <p class="card-link"><a href="https://github.com/mahmoud112001">View on GitHub</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" class="section" aria-labelledby="exp-title">
+    <h2 id="exp-title">Experience</h2>
+    <ol class="timeline">
+      <li><h3>Backend Developer Intern, i-fikra</h3><p class="when">Current</p></li>
+      <li><h3>Backend Developer Intern, Devora</h3><p class="when">September 2026</p></li>
+      <li><h3>Backend Developer Intern, YallaExpand (Cairo)</h3><p class="when">July to September 2026</p><p>Built with Node.js and Express.</p></li>
+      <li><h3>Frontend Intern, Huma Volve (Cairo)</h3><p class="when">August 2026</p></li>
+      <li><h3>Full-Stack and Generative AI program, ITI</h3><p class="when">600+ hours</p><p>MERN stack; Am Ghareeb began as the graduation project.</p></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p class="prose">Hiring for a backend role or want to talk about a project? Send a message.</p>
+    <form id="contact-form" class="form" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+        <p class="err" id="name-err" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+        <p class="err" id="email-err" aria-live="polite"></p>
+      </div>
+      <div class="field field-wide">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-err"></textarea>
+        <p class="err" id="message-err" aria-live="polite"></p>
+      </div>
+      <div class="field-wide">
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="status" id="form-status" role="status"></p>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Mahmoud</p>
+  <ul>
+    <li><a href="https://github.com/mahmoud112001" rel="noopener">GitHub</a></li>
+  </ul>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>

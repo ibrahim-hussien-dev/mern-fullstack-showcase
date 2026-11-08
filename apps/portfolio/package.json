@@ -1,0 +1,5 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": { "dev": "npx --yes serve -l 5500 ." }
+}
